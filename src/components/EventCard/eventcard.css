@@ -1,0 +1,89 @@
+.event-card-parent {
+  width: 272.04px;
+  height: 287.45px;
+
+  background-color: white;
+
+  filter: drop-shadow(0px 0px 13.5679px rgba(0, 0, 0, 0.2));
+}
+
+.event-card-background-image {
+  width: 271.36px;
+  height: 170.96px;
+
+  background: url("../../img/seatsTheatre.jpg"), #1a1c33;
+  object-fit: fill;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.title-venue-free-container {
+  width: 236.08px;
+  height: 67.53px;
+  margin: 32px 21px 18px 14px;
+  border: 1px solid aqua;
+}
+
+.event-venue-free-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+
+  margin-top: 9px;
+}
+
+.event-venue-podium-icon-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-title {
+  margin: 0px;
+  width: 236.08px;
+  height: 41.61px;
+
+  font-family: "Prompt-Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.2815px;
+  line-height: 130%;
+  /* or 21px */
+  color: #141b25;
+}
+
+.event-venue {
+  width: 75px;
+  height: 16px;
+  margin: 0px 45px 0px 6px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.8543px;
+  line-height: 16px;
+
+  color: #141b25;
+}
+
+.event-free-info-icon-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.event-free {
+  width: 67px;
+  height: 16px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.8543px;
+  line-height: 16px;
+
+  margin-left: 9px;
+
+  color: #141b25;
+}

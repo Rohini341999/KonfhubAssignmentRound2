@@ -1,0 +1,25 @@
+@font-face {
+  font-family: CaveatBrush-Regular;
+  src: url(../../fonts/Caveat_Brush/CaveatBrush-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(../../fonts/Nunito/static/Nunito-Regular.ttf);
+}
+
+.events-parent-container {
+  width: 208px;
+  height: 36px;
+}
+
+.text-250-events-parent {
+  font-family: "Nunito-Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  /* identical to box height, or 36px */
+
+  color: #141b25;
+}

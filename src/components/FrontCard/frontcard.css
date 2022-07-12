@@ -1,0 +1,60 @@
+@font-face {
+  font-family: CaveatBrush-Regular;
+  src: url(../../fonts/Caveat_Brush/CaveatBrush-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(../../fonts/Nunito/static/Nunito-Regular.ttf);
+}
+
+.front-card-parent-container {
+  height: 456px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* width: 1300px; */
+  background: #ffdba6;
+  border-radius: 50px;
+  border: 1px solid blue;
+  margin: 22px 45px 114px 95px;
+
+  box-shadow: 0px 6px 5px #c7c7c7;
+}
+
+.title-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-front-card {
+  height: 94px;
+  font-family: "CaveatBrush-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 130%;
+  margin: 70px 0px 0px 53px;
+  color: #572148;
+
+  width: 205px;
+}
+
+.info-front-card {
+  font-family: "Nunito-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #572148;
+  margin: 27px 133px 130px 95px;
+
+  width: 674px;
+}
+
+.octopus-container-front-card {
+  width: 354px;
+
+  margin: 41px 43px 83px 0;
+}
