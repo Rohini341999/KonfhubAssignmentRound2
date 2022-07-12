@@ -1,7 +1,7 @@
 import "../components/SearchBar/searchbar.css";
-export default function SearchIconBackground() {
+export default function SearchIconBackground(props) {
   return (
-    <div className="search-icon">
+    <button className="search-icon" onClick={props.onClick}>
       <svg
         width="24"
         height="24"
@@ -12,7 +12,6 @@ export default function SearchIconBackground() {
         <rect width="24" height="24" rx="12" fill="#572148" />
         <mask
           id="mask0_99_120"
-          //   style="mask-type:alpha"
           style={{ maskType: "alpha" }}
           maskUnits="userSpaceOnUse"
           x="6"
@@ -38,7 +37,6 @@ export default function SearchIconBackground() {
         <mask
           id="mask1_99_120"
           style={{ maskType: "alpha" }}
-          //   "mask-type:alpha"
           maskUnits="userSpaceOnUse"
           x="14"
           y="14"
@@ -61,6 +59,6 @@ export default function SearchIconBackground() {
           />
         </g>
       </svg>
-    </div>
+    </button>
   );
 }

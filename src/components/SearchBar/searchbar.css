@@ -19,14 +19,17 @@
 }
 
 .search-icon {
+  background: none;
+  border: none;
   position: absolute;
-  left: 52%;
+  left: 51%;
   top: 53%;
 }
 
 .input-tag {
   width: 305px;
   height: 40px;
+  padding: 0px 10px;
 
   position: relative;
   border-radius: 9px;
