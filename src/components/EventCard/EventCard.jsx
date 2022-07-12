@@ -1,7 +1,6 @@
 import InfoIcon from "../../svg/infoIcon";
 import PodiumIcon from "../../svg/podiumIcon";
 import "./eventcard.css";
-// import EventCardBackgroundImage from "../../img/seatsTheatre.jpg";
 
 export default function EventCard() {
   return (

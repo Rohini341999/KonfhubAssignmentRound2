@@ -1,4 +1,8 @@
+import bootstrap from "bootstrap";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
+
 import SearchIconBackground from "../../svg/searchIconBackground";
+import DownArrowDropdownIcon from "../../svg/downArrowDropdownIcon";
 import "./searchbar.css";
 export default function SearchBar() {
   return (
@@ -11,10 +15,32 @@ export default function SearchBar() {
       </div>
       <div className="dropdown-container">
         <span className="dropdown-title">Past Events</span>
-        <select name="past-events" className="dropdown-select-past-events">
-          <option className="dropdown-option">True</option>
-          <option className="dropdown-option">False</option>
-        </select>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Select Type
+          </button>
+          <span className="down-arrow-dropdown-icon-container">
+            <DownArrowDropdownIcon />
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li className="dropdown-li">
+              <a class="dropdown-item" name="true" href="#">
+                True
+              </a>
+            </li>
+            <li className="dropdown-li">
+              <a class="dropdown-item" href="#" name="false">
+                False
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

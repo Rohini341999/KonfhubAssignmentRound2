@@ -20,7 +20,6 @@
   width: 236.08px;
   height: 67.53px;
   margin: 32px 21px 18px 14px;
-  border: 1px solid aqua;
 }
 
 .event-venue-free-container {
@@ -49,7 +48,7 @@
   font-weight: 600;
   font-size: 16.2815px;
   line-height: 130%;
-  /* or 21px */
+
   color: #141b25;
 }
 
