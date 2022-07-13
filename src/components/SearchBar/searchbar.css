@@ -6,6 +6,7 @@
   border-radius: 15px;
   top: 71%;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
@@ -144,4 +145,124 @@ ul.dropdown-menu.show:nth-child(1) {
 .dropdown-li:nth-child(even) {
   border-bottom: 1px solid black;
   border-radius: 9px;
+}
+
+@media screen and (max-width: 1080px) {
+  .search-past-events-container {
+    top: 139%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .search-past-events-container {
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 400px;
+    height: 195px;
+    top: 139%;
+  }
+  .input-tag {
+    width: auto;
+  }
+  .search-icon {
+    left: 85%;
+    top: 30%;
+  }
+  button#dropdownMenuButton1 {
+    width: auto;
+  }
+  .down-arrow-dropdown-icon-container {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .search-past-events-container {
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 400px;
+    height: 195px;
+    top: 139%;
+  }
+  .input-tag {
+    width: auto;
+  }
+  .search-icon {
+    left: 85%;
+    top: 30%;
+  }
+  button#dropdownMenuButton1 {
+    width: auto;
+  }
+  .down-arrow-dropdown-icon-container {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-past-events-container {
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 400px;
+    height: 195px;
+    top: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-past-events-container {
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 300px;
+    height: 295px;
+    top: 100%;
+  }
+
+  .down-arrow-dropdown-icon-container {
+    left: 28%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .search-past-events-container {
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 200px;
+    height: 205px;
+    top: 140%;
+  }
+  .input-tag {
+    width: auto;
+  }
+  .search-icon {
+    left: 75%;
+  }
+  button#dropdownMenuButton1 {
+    width: auto;
+  }
+  .down-arrow-dropdown-icon-container {
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .search-past-events-container {
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 200px;
+    height: 205px;
+    top: 150%;
+  }
+  .input-tag {
+    width: auto;
+  }
+  .search-icon {
+    left: 75%;
+  }
+  button#dropdownMenuButton1 {
+    width: auto;
+  }
+  .down-arrow-dropdown-icon-container {
+    left: 45%;
+  }
 }

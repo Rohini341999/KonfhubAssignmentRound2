@@ -2,15 +2,13 @@ import InfoIcon from "../../svg/infoIcon";
 import PodiumIcon from "../../svg/podiumIcon";
 import "./eventcard.css";
 
-export default function EventCard() {
+export default function EventCard({ data }) {
   return (
     <div>
       <div className="event-card-parent">
         <div className="event-card-background-image"></div>
         <div className="title-venue-free-container">
-          <p className="event-title">
-            Annual International Conference On Data Science
-          </p>
+          <p className="event-title">{data.name}</p>
           <div className="event-venue-free-container">
             <div className="event-venue-podium-icon-container">
               <span>
@@ -22,7 +20,10 @@ export default function EventCard() {
               <span>
                 <InfoIcon />
               </span>
-              <span className="event-free">Free | Online</span>
+              <span className="event-free">
+                {data.is_free ? "Free" : "Paid"} |{" "}
+                {data.is_virtual ? "Online" : "Offline"}
+              </span>
             </div>
           </div>
         </div>
@@ -30,3 +31,10 @@ export default function EventCard() {
     </div>
   );
 }
+
+// is_free: false
+// is_future: true
+// is_live: false
+// is_past: false
+// is_running: false
+// is_virtual: false

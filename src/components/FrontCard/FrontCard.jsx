@@ -1,7 +1,12 @@
 import OctopusIcon from "../../svg/octopusIcon";
 import SearchBar from "../SearchBar/Searchbar";
 import "./frontcard.css";
-export default function FrontCard() {
+export default function FrontCard({
+  onSearchClick,
+  onSearchChange,
+  onTrue,
+  onFalse,
+}) {
   return (
     <div className="front-card-parent-container">
       <div className="title-info-container">
@@ -18,7 +23,12 @@ export default function FrontCard() {
       <div className="octopus-container-front-card">
         <OctopusIcon />
       </div>
-      <SearchBar />
+      <SearchBar
+        onSearchClick={onSearchClick}
+        onSearchChange={onSearchChange}
+        onTrue={onTrue}
+        onFalse={onFalse}
+      />
     </div>
   );
 }

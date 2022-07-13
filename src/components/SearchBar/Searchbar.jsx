@@ -4,40 +4,12 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 import SearchIconBackground from "../../svg/searchIconBackground";
 import DownArrowDropdownIcon from "../../svg/downArrowDropdownIcon";
 import "./searchbar.css";
-import { useState, useEffect } from "react";
-import Axios from "axios";
-export default function SearchBar() {
-  const [searchText, setSearchText] = useState("");
-  const [dropdownValue, setDropdownValue] = useState("");
-  console.log(searchText, "searchText");
-
-  const onSearchClick = async () => {
-    // const res = await Axios(
-    //   `https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?limit=20&search_query=${searchText}`
-    // );
-    // return await res.json();
-  };
-
-  const getData = async () => {
-    // const res = await Axios(
-    //   `https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?limit=20&past_events=${dropdownValue}`
-    // );
-    // return await res.json();
-  };
-  useEffect(() => {
-    getData();
-  }, [dropdownValue]);
-
-  const onTrue = (e) => {
-    const trueName = document.getElementsByName("true")[0].name;
-    setDropdownValue(trueName);
-  };
-
-  const onFalse = (e) => {
-    const falseName = document.getElementsByName("false")[0].name;
-    setDropdownValue(falseName);
-  };
-
+export default function SearchBar({
+  onSearchClick,
+  onSearchChange,
+  onTrue,
+  onFalse,
+}) {
   return (
     <div className="search-past-events-container">
       <div className="search-container">
@@ -46,7 +18,7 @@ export default function SearchBar() {
         <input
           className="input-tag"
           type="text"
-          onChange={(e) => setSearchText(e.target.value)}
+          onChange={onSearchChange}
         ></input>
         <SearchIconBackground onClick={onSearchClick} />
       </div>

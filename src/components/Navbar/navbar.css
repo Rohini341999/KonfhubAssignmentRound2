@@ -5,13 +5,10 @@
 
 .navbar-parent-container {
   height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo-container {
-  width: 802px;
+  /* width: 802px; */
 }
 
 .events-resources-pricing-container {

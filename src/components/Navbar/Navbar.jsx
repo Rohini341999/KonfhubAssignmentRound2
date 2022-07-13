@@ -8,14 +8,14 @@ export default function Navbar() {
       <div className="logo-container">
         <Logo />
       </div>
-      <div className="events-resources-pricing-container">
+      {/* <div className="events-resources-pricing-container">
         <span className="events-resources-pricing">Events</span>
         <span className="events-resources-pricing">Resources</span>
         <span className="events-resources-pricing">Pricing</span>
         <button className="host-event-button-navbar"> Host Event</button>
         <ProfileIcon />
       </div>
-      <div></div>
+      <div></div> */}
     </div>
   );
 }
