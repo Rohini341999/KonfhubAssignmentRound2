@@ -12,17 +12,17 @@ export default function SearchBar() {
   console.log(searchText, "searchText");
 
   const onSearchClick = async () => {
-    const res = await Axios(
-      `https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?limit=20&search_query=${searchText}`
-    );
-    return await res.json();
+    // const res = await Axios(
+    //   `https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?limit=20&search_query=${searchText}`
+    // );
+    // return await res.json();
   };
 
   const getData = async () => {
-    const res = await Axios(
-      `https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?limit=20&past_events=${dropdownValue}`
-    );
-    return await res.json();
+    // const res = await Axios(
+    //   `https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?limit=20&past_events=${dropdownValue}`
+    // );
+    // return await res.json();
   };
   useEffect(() => {
     getData();
